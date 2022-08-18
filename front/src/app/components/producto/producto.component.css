@@ -1,0 +1,81 @@
+.containerselectser{
+    width: 1230px;
+    height: 1000px;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top : 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.containerlistServ{
+    width: 450px;
+    height: 800px;
+    border-radius: 10px;
+    border-style: solid;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 49%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    overflow: scroll;
+    font-weight: bold;
+}
+.conServ{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.connuevop{
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    left: 70%;
+    transform: translate(-32%, -0%);
+}
+.tinp{
+    padding: 10px;
+    margin-top: 50px;
+    width: 370px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: black;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+}
+.btnnuevop{
+    background-color: gray;
+    color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    border-width: 2px;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    position: relative;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.btnsrOS{
+    align-content: center;
+    justify-content: center;
+    width:max-content;
+    position: relative;
+    padding: 5px;
+    text-align: left;
+    font-size: 25px;
+    float: left;
+}

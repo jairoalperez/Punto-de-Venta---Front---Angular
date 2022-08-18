@@ -1,0 +1,39 @@
+<div class='container'>
+    <div class='containerselectser'>
+      <div>
+        <h1>Ingresar Servicio</h1>
+
+        
+          <div class='containerlistServ'>
+            <tr *ngFor="let producto of productoService.productos">
+                <div class='conServ'>
+                  <div class='btnsrOS'>
+                    <h5>Servicio: {{producto.nombrep}}  - Valor Aprox: ${{producto.valorp}}</h5>
+                  </div>
+                </div>
+            </tr>
+          </div>
+        <form #productoForm="ngForm" (ngSubmit)="addProducto(productoForm)">
+        <div class='connuevop'>
+          <input
+            class='tinp'
+            placeholder='Nombre'
+            type='text'
+            name='nombrep'
+            [(ngModel)]="productoService.selectedProductor.nombrep"
+          />
+          <input
+            class='tinp'
+            placeholder='Valor Aproximado $'
+            type='numeric'
+            name='valorp'
+            [(ngModel)]="productoService.selectedProductor.valorp"
+          />
+          <button class='btnnuevop'>
+            Ingresar Nuevo Servicio
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>

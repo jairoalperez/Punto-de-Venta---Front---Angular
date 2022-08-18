@@ -1,0 +1,54 @@
+<div class='container'>
+    <div class='containerselectser'>
+      <h1>Punto de Venta</h1> 
+
+      <div class='containerlistServ'>
+        <h4>Lista de precios aproximados</h4>
+            <tr *ngFor="let producto of productoService.productos">
+                <div class='conServ'>
+                    <div class='btnsrOS'>
+                      <h5>Servicio: {{producto.nombrep}}  - Valor Aprox: ${{producto.valorp}}</h5>
+                    </div>
+                </div>
+            </tr>
+              
+      </div>
+      
+      <form #ventaForm="ngForm" (ngSubmit)="addVenta(ventaForm)">
+      <div class='concart'>
+        <div>
+          <select
+            class='selectserven'
+            placeholder='Seleccionar Servicio'
+            name="productos"
+            [(ngModel)]="ventaService.selectedVenta.productos"
+          >
+            <option
+            *ngFor="let producto of productoService.productos"
+            value={{producto.nombrep}}>{{producto.nombrep}}
+            </option>
+          </select>
+        </div>
+        <input
+          class='tinp'
+          placeholder='Nombre del Cliente'
+          type='text'
+          name='nombrec'
+          [(ngModel)]="ventaService.selectedVenta.nombrec"
+        />
+        <input
+          class='tinp'
+          placeholder='Monto $'
+          type='numeric'
+          name='monto'
+          [(ngModel)]="ventaService.selectedVenta.monto"
+        />
+        <button class='btnnuevop'>
+          Finalizar Venta
+        </button>
+      </div>
+    </form>
+      
+
+    </div>
+  </div>

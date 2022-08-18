@@ -1,0 +1,20 @@
+<div class='container'>
+    <div class='containerselectser'>
+        <h1>Clientes que mas han Comprado</h1>
+
+        
+        <div class='containerSMV'>
+            <div class='conSMV'>
+                <tr *ngFor="let clicom of clicomService.clicoms">
+                <div class='btnsSMV'>
+                    <h4>Cliente: {{clicom.nombrec}} | {{clicom.repeticiones}}</h4>            
+                </div>
+                </tr>
+            </div>
+        </div>
+        
+
+
+
+    </div>
+</div>
